@@ -112,6 +112,7 @@ a{
     height: 525px;
     transition: all 2s;
     color: white;
+    box-shadow: 15px 14px 16px -6px rgba(0,0,0,0.75);
 }
 
 .partThree{
@@ -151,6 +152,7 @@ a{
     height: 525px;
     transition: all 2s;
     color: white;
+    box-shadow: 15px 14px 16px -6px rgba(0,0,0,0.75);
 }
 
 .boton1, .boton2{
@@ -179,6 +181,7 @@ a{
 
 .boton1Active{
     animation: float 20s;
+    box-shadow: 15px 14px 16px -6px rgba(0,0,0,0.75);
 }
 
 @keyframes float {
