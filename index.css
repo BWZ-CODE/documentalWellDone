@@ -280,18 +280,25 @@ a{
 }
  
 .boxActive{
-    animation: volador 5s;
+    animation: volador 2s;
+    animation-timing-function: ease-out;
 }
 
 @keyframes volador {
     0%{
-        transform: scale(0);
+        transform: translateY(0);
     }
     50%{
-        transform: scale(1.1);
+        transform: translateY(20px);
+    }
+    60%{
+        transform: translateY(0px);
+    }
+    70%{
+        transform: translateY(10px);
     }
     100%{
-        transform: scale(1);
+        transform: translateY(0);
     }
 }
 
@@ -387,3 +394,59 @@ a{
     opacity: 0.3;
     transition: all 0.5s;
 }
+
+
+.informacion2,.informacion3,.informacion4,.informacion5,.informacion6,.informacion7,.informacion8,.informacion9{
+    display: flex;
+    width: 600px;
+    height: 495px;
+    position: relative;
+    top: 10%;
+    left: 20%;
+    z-index: 2;
+    border-radius: 10px;
+    background-color: white;
+}
+.informacion2IMG, .informacion3IMG, .informacion4IMG, .informacion5IMG, .informacion6IMG, .informacion7IMG, .informacion8IMG, .informacion9IMG{
+    position: relative;
+    width: 380px;
+    height: 495px;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.informacion2IMG img , .informacion3IMG img, .informacion4IMG img,.informacion5IMG img , .informacion6IMG img, .informacion7IMG img,.informacion8IMG img , .informacion9IMG img{
+    position: absolute;
+    object-fit: contain;
+    width: 300px;
+    height: 495px;
+}
+
+.informacion2Texto, .informacion3Texto, .informacion4Texto,.informacion5Texto, .informacion6Texto, .informacion7Texto,.informacion8Texto, .informacion9Texto{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.informacionPost2, .informacionPost3, .informacionPost4,.informacionPost5, .informacionPost6, .informacionPost7,.informacionPost8, .informacionPost9{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 15px;
+    margin-bottom: 20px;
+    
+}
+
+.infos2, .infos3, .infos4,.infos5, .infos6, .infos7,.infos8, .infos9{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.inactive{
+    display: none;
+}
+
+
+
