@@ -248,7 +248,7 @@ a{
     width: 100%;
     justify-content: space-evenly;
     gap: 15px;
-    backdrop-filter: blur(100px);
+    /* backdrop-filter: blur(100px); */
     padding:    5px;
 }
 
