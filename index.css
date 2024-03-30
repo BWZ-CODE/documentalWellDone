@@ -19,6 +19,8 @@ a{
     display: none;
 }
 
+
+
 .inicio{
     position: relative;
     width: 100%;
@@ -226,6 +228,7 @@ a{
     position: relative;
     width: 100%;
     height: 612px;
+    transition: all 0.5s;
     
 }
 
@@ -237,6 +240,7 @@ a{
     object-fit:cover;
     z-index: -1;
     background-color: black;
+    
 }
 
 .partFourBoxes1{
@@ -259,6 +263,7 @@ a{
 .partFourBoxes1{
     position: absolute;
     top: 0px;
+    
 }
 
 .box{
@@ -270,4 +275,115 @@ a{
 
 .partFourBoxes1 .box:hover{
     transform: translatey(15px);
+    transition: all 0.5s;
+
+}
+ 
+.boxActive{
+    animation: volador 5s;
+}
+
+@keyframes volador {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+
+
+.informacion1{
+    display: flex;
+    width: 600px;
+    height: 495px;
+    position: relative;
+    top: 10%;
+    left: 20%;
+    z-index: 2;
+    border-radius: 10px;
+    background-color: white;
+}
+.informacion1IMG{
+    position: relative;
+    width: 380px;
+    height: 495px;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.informacion1IMG img{
+    position: absolute;
+    object-fit: contain;
+    width: 300px;
+    height: 495px;
+}
+
+.informacion1Texto{
+    display: flex;
+    flex-direction: column;
+}
+.close{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 50px;
+    border-bottom: 0.5px solid black;
+
+}
+.close a{
+    color: rgb(0,149,246);
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.close img{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.informacionPost1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 15px;
+    margin-bottom: 20px;
+    
+}
+
+.infos1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fecha{
+    border-top: 0.5px solid black;
+}
+
+.fecha p{
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.inactive{
+    display: none;
+}
+
+.blur{
+    opacity: 0.3;
+    transition: all 0.5s;
 }
