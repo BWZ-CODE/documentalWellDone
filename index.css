@@ -7,8 +7,6 @@
 
 body{
     margin: 0;
-    
-
 }
 
 a{
@@ -19,12 +17,19 @@ a{
     display: none;
 }
 
+/* .container{
+        
+    scroll-snap-type: y  mandatory;
+    overflow-y:scroll;
+    height: 612px;
+} */
 
 
 .inicio{
     position: relative;
     width: 100%;
     height: 612px;
+    scroll-snap-align:start ;
     
 }
 
@@ -79,6 +84,7 @@ a{
     position: relative;
     width: 100%;
     height: 612px;
+    scroll-snap-align:start ;
 }
 
 
@@ -118,9 +124,11 @@ a{
 }
 
 .partThree{
+    scroll-snap-align:start ;
     position: relative;
     width: 100%;
     height: 612px;
+   
 }
 
 .partThreeImage img{
@@ -229,7 +237,7 @@ a{
     width: 100%;
     height: 612px;
     transition: all 0.5s;
-    
+    scroll-snap-align:start ;
 }
 
 .partFourVideo video    {
@@ -249,7 +257,7 @@ a{
     justify-content: space-evenly;
     gap: 15px;
     /* backdrop-filter: blur(100px); */
-    padding:    5px;
+    padding-top:    5px;
 }
 
 .partFourBoxes1 img{
@@ -280,28 +288,26 @@ a{
 }
  
 .boxActive{
-    animation: volador 2s;
-    animation-timing-function: ease-out;
+    animation: volador 0.5s;
+    animation-timing-function: ease;
 }
 
 @keyframes volador {
     0%{
-        transform: translateY(0);
+        transform:translateY(0px)  ;
     }
+
     50%{
-        transform: translateY(20px);
-    }
-    60%{
-        transform: translateY(0px);
-    }
-    70%{
-        transform: translateY(10px);
+        transform: translateY(10px) ;
     }
     100%{
-        transform: translateY(0);
+        transform: translateY(0px) ;
     }
 }
 
+.partFourBoxes1:first-child{
+    transition-delay: 10s;
+}
 
 
 

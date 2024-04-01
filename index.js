@@ -6,7 +6,7 @@ window.addEventListener("scroll", function(){
 
 window.addEventListener("scroll", function(){
     var text2 = document.querySelector(".partTwoText");
-    text2.classList.toggle("partTwoTextActive",this.window.scrollY>250)
+    text2.classList.toggle("partTwoTextActive",this.window.scrollY>256)
 })
 
 window.addEventListener("scroll", function(){
@@ -17,23 +17,23 @@ window.addEventListener("scroll", function(){
 
 window.addEventListener("scroll", function(){
     var boxe1 = document.querySelector(".active1");
-    boxe1.classList.toggle("boxActive",this.window.scrollY>1800)
+    boxe1.classList.toggle("boxActive",this.window.scrollY>1835)
     var boxe2 = document.querySelector(".active2");
-    boxe2.classList.toggle("boxActive",this.window.scrollY>1800)
+    boxe2.classList.toggle("boxActive",this.window.scrollY>1835)
     var boxe3 = document.querySelector(".active3");
-    boxe3.classList.toggle("boxActive",this.window.scrollY>1800)
+    boxe3.classList.toggle("boxActive",this.window.scrollY>1835)
     var boxe4 = document.querySelector(".active4");
-    boxe4.classList.toggle("boxActive",this.window.scrollY>1800)
+    boxe4.classList.toggle("boxActive",this.window.scrollY>1835)
     var boxe5 = document.querySelector(".active5");
-    boxe5.classList.toggle("boxActive",this.window.scrollY>1800)
+    boxe5.classList.toggle("boxActive",this.window.scrollY>1835)
     var boxe6 = document.querySelector(".active6");
-    boxe6.classList.toggle("boxActive",this.window.scrollY>1800)
+    boxe6.classList.toggle("boxActive",this.window.scrollY>1835)
     var boxe7 = document.querySelector(".active7");
-    boxe7.classList.toggle("boxActive",this.window.scrollY>1800)
+    boxe7.classList.toggle("boxActive",this.window.scrollY>1835)
     var boxe8 = document.querySelector(".active8");
-    boxe8.classList.toggle("boxActive",this.window.scrollY>1800)
+    boxe8.classList.toggle("boxActive",this.window.scrollY>1835)
     var boxe9 = document.querySelector(".active9");
-    boxe9.classList.toggle("boxActive",this.window.scrollY>1800)
+    boxe9.classList.toggle("boxActive",this.window.scrollY>1835)
 })
 
 
