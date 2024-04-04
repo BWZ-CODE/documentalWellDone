@@ -162,6 +162,7 @@ a{
     transition: all 2s;
     color: white;
     box-shadow: 15px 14px 16px -6px rgba(0,0,0,0.75);
+    font-size: 13px;
 }
 
 .partThree{
@@ -204,6 +205,7 @@ a{
     transition: all 2s;
     color: white;
     box-shadow: 15px 14px 16px -6px rgba(0,0,0,0.75);
+    font-size: 13px;
 }
 
 /* .boton1, .boton2{
