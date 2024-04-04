@@ -5,12 +5,17 @@
   font-style: normal;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
 }
 
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 ::-webkit-scrollbar{
@@ -24,13 +29,48 @@ a{
     height: 612px;
 } */
 
+.container{
+    position: relative;
+}
+
+/* //////////////////////////////////////////////////// */
+.separadores{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(105px);
+    left: 0;
+    top: 100px;
+    width: 100px;
+    height:400px ;
+    z-index: 3;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.separadores a{
+    cursor: pointer;
+    color: aliceblue;
+    font-weight: bold;
+}
+.separadores div{
+    transition:all 0.5s;
+}
+.separadores div:hover{
+    transform: translateY(5px) ;
+}
+
+
+/* //////////////////////////////////////////////////// */
 
 .inicio{
     position: relative;
     width: 100%;
     height: 612px;
     scroll-snap-align:start ;
-    
+    z-index: 4;
 }
 
 .inicioFondo video{
@@ -454,5 +494,13 @@ a{
     display: none;
 }
 
+/* @media (min-width: 1200px){
+    .inicio,.partTwo,.partThree,.partFour{
+        height: 922px;
+    }
+    .inicioTexto{
+        bottom: 00px;
+    }
+} */
 
 
