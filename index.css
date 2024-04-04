@@ -40,7 +40,8 @@ a{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    backdrop-filter: blur(105px);
+    background-color: rgb(66 66 69 / 70%);
+    backdrop-filter: blur(7px);
     left: 0;
     top: 100px;
     width: 100px;
