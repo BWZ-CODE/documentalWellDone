@@ -45,8 +45,8 @@ a{
     left: 0;
     top: 100px;
     width: 100px;
-    height:400px ;
-    z-index: 3;
+    height:300px ;
+    z-index: 4;
     border-radius: 15px;
     transition: all 0.5s;
 }
@@ -71,7 +71,7 @@ a{
     width: 100%;
     height: 612px;
     scroll-snap-align:start ;
-    z-index: 4;
+    z-index: 3;
 }
 
 .inicioFondo video{
@@ -94,7 +94,7 @@ a{
     bottom: 300px;
     right: 80px;
     color: white;
-    max-width: 400px;
+    max-width: 300px;
     min-width: 300px;
     padding: 15px;
     border-radius: 15px;
@@ -142,7 +142,7 @@ a{
     position: absolute;
     top:250px;
     left: 100px;
-    width: 400px;
+    width: 300px;
     height: 200px;
     padding: 10px;
     margin: 0;
@@ -157,7 +157,7 @@ a{
 .partTwoTextActive{
     transform:translatex(750px);
     top: 25px;
-    width: 400px;
+    width: 300px;
     height: 525px;
     transition: all 2s;
     color: white;
@@ -185,7 +185,7 @@ a{
     position: absolute;
     top:250px;
     left: 100px;
-    width: 400px;
+    width: 300px;
     height: 220px;
     padding: 10px;
     margin: 0;
@@ -199,7 +199,7 @@ a{
 .partThreeTextActive{
     transform:translatex(750px);
     top: 25px;
-    width: 400px;
+    width: 300px;
     height: 525px;
     transition: all 2s;
     color: white;
@@ -215,7 +215,7 @@ a{
     padding: 5px;
     border-radius: 5px;
     bottom: 100px;
-    left: 400px;
+    left: 300px;
     background-color: transparent;
     backdrop-filter: blur(10px);
     border: none;
@@ -281,7 +281,7 @@ a{
     scroll-snap-align:start ;
 }
 
-.partFourVideo iframe    {
+.partFourVideo video{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -443,7 +443,7 @@ a{
 }
 
 
-.informacion2,.informacion3,.informacion4,.informacion5,.informacion6,.informacion7,.informacion8,.informacion9{
+.informacion1,.informacion2,.informacion3,.informacion4,.informacion5,.informacion6,.informacion7,.informacion8,.informacion9{
     display: flex;
     width: 600px;
     height: 495px;
@@ -495,13 +495,99 @@ a{
     display: none;
 }
 
-/* @media (min-width: 1200px){
+@media (min-width: 1900px){
+    .separadores{
+        height: 600px;
+    }
+
+
     .inicio,.partTwo,.partThree,.partFour{
-        height: 922px;
+        height: 100vh;
     }
     .inicioTexto{
-        bottom: 00px;
+        bottom:500px;
     }
-} */
+    .partTwoImg img{
+        object-position: 0 -200px;
+    }
+
+    .partTwoTextActive,.partThreeTextActive{
+        transform:translatex(1100px);
+        top: 100px;
+        width: 400px;
+        height: 620px;
+        font-size: 18px;
+    }
+    
+    .partFourBoxes1 img{
+        width: 90px;
+        height: 90px;
+
+    }
+
+    .informacion1,.informacion2,.informacion3,.informacion4,.informacion5,.informacion6,.informacion7,.informacion8,.informacion9{
+        width: 800px;
+        height: 600px;
+        position: relative;
+        top: 10%;
+        left: 30%;
+        
+    }
+    .informacion1IMG,.informacion2IMG, .informacion3IMG, .informacion4IMG, .informacion5IMG, .informacion6IMG, .informacion7IMG, .informacion8IMG, .informacion9IMG{
+        width: 500px;
+        height: 600px;
+        border-radius: 10px 0 0 10px;
+        overflow: hidden;
+        background-color: black;
+    }
+    
+    .informacion1IMG img , .informacion2IMG img , .informacion3IMG img, .informacion4IMG img,.informacion5IMG img , .informacion6IMG img, .informacion7IMG img,.informacion8IMG img , .informacion9IMG img{
+        position: absolute;
+        object-fit: contain;
+        width: 470px;
+        height: 600px;
+    }
+    
+    .informacion1Texto,.informacion2Texto, .informacion3Texto, .informacion4Texto,.informacion5Texto, .informacion6Texto, .informacion7Texto,.informacion8Texto, .informacion9Texto{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .informacionPost1,.informacionPost2, .informacionPost3, .informacionPost4,.informacionPost5, .informacionPost6, .informacionPost7,.informacionPost8, .informacionPost9{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin: 15px;
+        margin-bottom: 20px;
+        width: 300px;
+        font-size: 18px;
+        
+    }
+    
+    .infos1,.infos2, .infos3, .infos4,.infos5, .infos6, .infos7,.infos8, .infos9{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .close{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 330px;
+        height: 50px;
+
+    }
+    .close a{
+        margin-left:25px ;
+    }
+
+    
+.fecha p{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+}
 
 
